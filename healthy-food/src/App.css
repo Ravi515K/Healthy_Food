@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+ 
+}
+.home {
+  width:90%;
+  margin-left: 5%;
+}
+#events img {
+  width:32%;
+  height:370px;
+  border-radius: 10px;
+}
+div h2{
+  text-align: center;
+}
+
+
