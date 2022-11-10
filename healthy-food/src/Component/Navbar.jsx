@@ -9,7 +9,9 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
+
+import { Stack, HStack, VStack } from '@chakra-ui/react'
 
 
 function PinCode() {
@@ -47,9 +49,9 @@ function Navbar(){
         <Box boxSize='100px' >
             <Image src='https://www.naturesbasket.co.in/Images/logosnew.png?v=2' alt='' />
         </Box>
-        <Box ml={"20%"}>
-            <Box boxSize={"70%"} display="flex" justifyContent={"space-between"}>
-              <Text>Store Locator  |</Text>
+        <Box ml={"20%"} width={"70%"} display="flex" justifyContent={"space-between"}>
+           
+              {/* <Text>Store Locator  |</Text>
               <Text>Contact Us  |</Text>
               <Select placeholder='Enter Pincode'>
                   <option value='option1'>Mumbai</option>
@@ -59,9 +61,31 @@ function Navbar(){
                   <option value='option2'>Navi Mimbai</option>
                   <option value='option3'>Pune</option>
               </Select>
-              <Box><PinCode/></Box>
-            </Box>
-            <Box></Box>
+              <Box><PinCode/></Box> */}
+
+              <HStack width={"90%"} display="flex" justifyContent={"space-evenly"} spacing='50px' textAlign={"center"}>
+                <Box  w='400px' h='40px'>
+                 <a href="https://www.naturesbasket.co.in/HTML/LocateStore.aspx?v=1"> Store Locator</a>   
+                </Box>
+                <Box> |</Box>
+                <Box w='400px' h='40px' >
+                   Contact Us  
+                </Box>
+                <Box> |</Box>
+          
+                    <Select placeholder='Enter Pincode'>
+                      <option value='option1'>Mumbai</option>
+                      <option value='option2'>Delhi</option>
+                      <option value='option3'>Thane</option>
+                      <option value='option1'>Bengaluru</option>
+                      <option value='option2'>Navi Mimbai</option>
+                      <option value='option3'>Pune</option>
+                    </Select>
+                    <Box> <PinCode/></Box>
+              </HStack>
+
+            
+            
         </Box>
       </Box>
       
