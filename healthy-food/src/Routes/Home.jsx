@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { FaGreaterThan,FaLessThan } from 'react-icons/fa';
 import Navbar from "../Component/Navbar"
+import Footer from "../Component/Footer"
 
 
 const SlideImg=()=>{
@@ -35,11 +36,13 @@ const SlideImg=()=>{
 
     return (
         <Box className="slideshow">
+            <Box display="flex">
+            <button alignItems='center' onClick={prev}> <FaLessThan/></button>
             <Image src={img[index]} />
-            <Box>
-                <button  onClick={prev}> <FaLessThan/></button>
-                <button onClick={next} > <FaGreaterThan/> </button>
+            <button alignItems='center' marginLeft="100%" onClick={next} > <FaGreaterThan/>  </button>
             </Box>
+            
+           
         </Box>
     )
 }
@@ -78,19 +81,18 @@ const SlideBrand=()=>{
     }
 
     return (
-        <Box className="slideshow">
+        <Box className="slideshow" mt={"50px"}>
             <Box style={{display:"flex",justifyContent:"space-between"}}>
+            <button alignItems='center' onClick={prev}><FaLessThan/> </button>
             <Image src={brands[index]} />
             <Image src={brands[index+1]} />
             <Image src={brands[index+2]} />
             <Image src={brands[index+3]} />
             <Image src={brands[index+4]} />
+            <button alignItems='center' onClick={next} > <FaGreaterThan/>  </button>
             </Box>
             
-            <Box  >
-                <button onClick={prev}><FaLessThan/> </button>
-                <button onClick={next} > <FaGreaterThan/>  </button>
-            </Box>
+            
         </Box>
     )
 }
@@ -137,7 +139,13 @@ function Home(){
                          <SlideBrand/>
                       </Box>
                    </Box>
-                
+
+                    {/* <Box>
+                        <Footer/>
+                    </Box> */}
+                </Box>
+                <Box>
+                    <Footer />
                 </Box>
         </Box>
     )
