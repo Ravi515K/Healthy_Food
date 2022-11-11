@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { FaGreaterThan,FaLessThan } from 'react-icons/fa';
-import Navbar from "../Component/Navbar"
+import {Navbar} from "../Component/Navbar"
 import Footer from "../Component/Footer"
 
 
@@ -114,7 +114,8 @@ function Home(){
                    </Box>
                    <Box mt="50px">
                         <Box style={{display:"flex" ,justifyContent:"space-between"}}>
-                            <img src="https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=8" alt="" />
+                            <a href="https://thegiftstudio.com/"><img src="https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=8" alt="" /></a>
+                            
                             <img src="https://www.naturesbasket.co.in/Images/Fruits-Vegetables.png?v=17" alt="" />
                             <img src="https://www.naturesbasket.co.in/Images/Gluten-free-web%20box%20banner.png?v=15" alt="" />
 

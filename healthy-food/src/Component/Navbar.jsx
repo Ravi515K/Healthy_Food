@@ -17,7 +17,7 @@ import {useState} from "react"
 import Login from "../Routes/Login"
 
 
-function PinCode() {
+ function Pincode() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -58,7 +58,7 @@ function Navbar(){
   const [state, setState]=useState(false)
 
   return (
-    <Box className="navbar" mt="10px">
+    <Box className="navbar" mt="10px" mb="40px">
       <Box display="flex" >
         <Box>
             <Image src='https://www.naturesbasket.co.in/Images/logosnew.png?v=2' alt='' />
@@ -85,7 +85,7 @@ function Navbar(){
                           <option value='option2'>Navi Mimbai</option>
                           <option value='option3'>Pune</option>
                         </Select>
-                        <Box> <PinCode/></Box>
+                        <Box> <Pincode/></Box>
                  </HStack>
                  <Box>
                   <Login />
@@ -122,7 +122,39 @@ function Navbar(){
             
         </Box>
       </Box>
+
+      <Box className="Navbar"  >
+         <ul style={{listStyle:"none",}}>
+          <HStack spacing="80px"  >
+          <li style={{backgroundColor:"grey",color:"#B71761"}}> SHOP BY CATEGORY
+             <Box w="200px"  id="drop" textAlign="center">
+                <ul style={{listStyle:"none" }}>
+                  <VStack spacing="5px" listStyle="none" textAlign={"left"}>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Gift-Hampers/1_0_0">Gifting</a></li>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Cheese-Meat-Fruit-Platters/21_0_0">cheese, meat and fruit</a></li>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Cheese-Meat-Fruit-Platters/21_0_0">Indian Cuisine</a></li>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Health/3_0_0">Health</a></li>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Indian-Grocery/12_0_0">Indian Grocery</a></li>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Confectionary-Patisserie/6_0_0">Confectionary</a></li>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Snack-Bar/16_0_0">Snack Bar</a></li>
+                      <li><a href="https://www.naturesbasket.co.in/Online-grocery-shopping/Breakfast--Dairy-Bakery/11_0_0">Breakfast and Dairy</a></li>
+                  </VStack>
+                 
+                </ul>
+             </Box>
+           </li>
+           <li>MY ORDERS</li>
+           <li>GIFTING</li>
+           <li>REWARDS</li> 
+           <li>BLOG</li>
+           <li>OFFERS</li>
+           <li>BOOK STORE VISIT</li>
+          </HStack>
+          
+          
+         </ul>
+      </Box>
       
     </Box>
   )
-}export default Navbar;
+}export  {Navbar,Pincode};

@@ -15,4 +15,20 @@ div h2{
   text-align: center;
 }
 
+/* .navbar{
+  margin-top: 20px;
+} */
+
+#drop{
+  display:none;
+}
+.Navbar ul li:hover #drop{
+display:block;
+/* width:100px; */
+position:absolute;
+background:white ;
+margin-top:1px;
+margin-left:-15px;
+list-style: none;
+}
 
