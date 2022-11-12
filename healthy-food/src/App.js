@@ -5,6 +5,7 @@ import AllRoutes from "./Routes/AllRoutes"
 import Footer from "./Component/Footer"
 import Organic from './Pages/Organic';
 import StoreVisit from './Pages/StoreVisit';
+import { Navbar } from './Component/Navbar';
 function App() {
   return (
     <div >
@@ -13,6 +14,7 @@ function App() {
      {/* <Login/> */}
      {/* <Organic/> */}
      {/* <StoreVisit/> */}
+     {/* <Navbar/> */}
     </div>
   );
 }

@@ -3,8 +3,8 @@ import {Box,Text,Stack,HStack,VStack, Heading,Image,Input, Button, Divider} from
 
 function Footer(){
     return (
-        <Box w="100%" className="footer" gap="20px" mt="50px" bgColor={"gray.10"}>
-            <Box >
+        <Box className="footer" w="100%" gap="20px" mt="50px" bgColor={"gray.10"} padding="20px">
+            <Box  ml="10%" mt="20px">
                 <HStack mt="20px">
                     <Box w="200px" h="200px">
                         

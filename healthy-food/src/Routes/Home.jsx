@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { FaGreaterThan,FaLessThan } from 'react-icons/fa';
-import {Navbar} from "../Component/Navbar"
+import {Navbar,Pincode} from "../Component/Navbar"
 import Footer from "../Component/Footer"
 
 
@@ -104,11 +104,11 @@ function Home(){
    
     return (
         <Box className="home">
-                <Box id="navbar" > 
+                <Box id="navbar" w="100%" > 
                     <Navbar/>
                 </Box>
 
-                <Box id="body"> 
+                <Box id="body" w="90%" ml="5%"> 
                    <Box>
                      <img src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg" alt="" />
                    </Box>
@@ -145,6 +145,7 @@ function Home(){
                         <Footer/>
                     </Box> */}
                 </Box>
+                
                 <Box>
                     <Footer />
                 </Box>
