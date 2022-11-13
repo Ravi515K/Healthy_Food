@@ -103,10 +103,10 @@ function Home(){
    
    
     return (
-        <Box className="home">
-                <Box id="navbar" w="100%" > 
+        <Box className="home" >
+               
                     <Navbar/>
-                </Box>
+            
 
                 <Box id="body" w="90%" ml="5%"> 
                    <Box>

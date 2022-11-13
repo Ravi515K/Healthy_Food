@@ -54,7 +54,7 @@ function Footer(){
                     <VStack>
                         <Heading fontSize={"15px"} color="grey" align="fex-start">SIGN UP TO STAY UPDATED</Heading>
                         <Input  placeholder="Enter Your Email Address" />
-                        <Button w="180px" bg={"green.500"} color="whiteAlpha.500">SUBSCRIBE</Button>
+                        <Button w="180px" bgColor={"hsl(122, 78%, 57%)"}  color="white">SUBSCRIBE</Button>
                     </VStack>
                     </Box>
                     
@@ -79,7 +79,7 @@ function Footer(){
                 <Text>|</Text>
                 <Text>Mobile Site</Text>
                 <Text>|</Text>
-                <text>FSSAI License Number - 11519002000496</text>
+                <Text>FSSAI License Number - 11519002000496</Text>
                 
              </Box>
 
