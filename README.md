@@ -8,4 +8,15 @@
  ![](https://i.ibb.co/Btnzt5N/Screenshot-183.png) 
  
  ## Pincode-Page (Modal)
- (https://i.ibb.co/jkwH7tL/Screenshot-184.png)
+ ![](https://i.ibb.co/jkwH7tL/Screenshot-184.png)
+ 
+ ## Register (Modal)
+ ![](https://i.ibb.co/WyGFJPf/Screenshot-185.png)
+ 
+ ## Product-Page
+![](https://i.ibb.co/Sfxjj2W/Screenshot-186.png) 
+
+## cart-Page
+![](https://i.ibb.co/QNcYX22/Screenshot-187.png)
+
+ ## Solo Project
